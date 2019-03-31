@@ -1,9 +1,15 @@
 <ion-header>
-  <app-task-header>
+  <app-task-header #header
+  [showSearch]="false" 
+  leftOptionIcon="custommenu" 
+  (leftOptionEvent)="header.openMenu()" 
+  rightOptionIcon="add" 
+  (rightOptionEvent)="header.openAdd()" 
+  >
       <ion-toolbar color="tertiary">
           <ion-tabs (ionTabsDidChange)="tabChanged($event)">
-              <ion-tab-bar color="tertiary" slot="bottom">
-                  <ion-tab-button tab="task-daily">
+              <ion-tab-bar color="tertiary" slot="bottom" >
+                  <ion-tab-button tab="task-daily" selected>
                     <ion-label>Daily</ion-label>
                   </ion-tab-button>
               

@@ -22,6 +22,11 @@ import { TaskMonthlyComponent } from './task-monthly/task-monthly.component';
         component: HomePage,
         children: [
           {
+            path: '',
+            redirectTo: 'task-daily',
+            pathMatch: 'full'
+          },
+          {
             path: 'task-daily',
             component: TaskDailyComponent
           },

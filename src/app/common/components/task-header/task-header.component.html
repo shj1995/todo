@@ -1,16 +1,16 @@
 <ion-toolbar color="tertiary">
-    <ion-buttons slot="start">
-      <ion-icon size="large" slot="" (click)="openMenu()" name="custommenu"></ion-icon>
+    <ion-buttons  slot="start">
+        <ion-icon *ngIf="leftOptionIcon" size="large" slot="" (click)="emitOptionEvent(leftOptionEvent)" [name]="leftOptionIcon"></ion-icon>
     </ion-buttons>
-    <ion-title>
+    <ion-title >
       Home
     </ion-title>
     <ion-buttons slot="end">
-      <ion-icon size="large" name="notifications-outline"></ion-icon>
-      <ion-icon size="large" slot="end" (click)="openMenu()" name="add"></ion-icon>
+      <ion-icon size="large" *ngIf="showNotice" name="notifications-outline"></ion-icon>
+      <ion-icon *ngIf="rightOptionIcon" size="large" slot="end" (click)="emitOptionEvent(rightOptionEvent)" [name]="rightOptionIcon" ></ion-icon>
     </ion-buttons>
   </ion-toolbar>
-  <ion-toolbar color="tertiary" >
+  <ion-toolbar color="tertiary" *ngIf="showSearch" >
       <ion-searchbar placeholder="Search Task" animated="true" color="light"></ion-searchbar>
   </ion-toolbar>
-  <ng-content></ng-content>
+  <ng-content select="ion-toolbar"></ng-content>

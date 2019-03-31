@@ -15,8 +15,7 @@ const routes: Routes = [
     path: 'list',
     loadChildren: './pages/list/list.module#ListPageModule'
   },
-  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
-  { path: 'done-task', loadChildren: './pages/done-task/done-task.module#DoneTaskPageModule' }
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' }
 ];
 
 @NgModule({

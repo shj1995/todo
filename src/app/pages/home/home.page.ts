@@ -10,12 +10,10 @@ export class HomePage {
   tabCounter = 0;
   tabEvent = 'task-daily';
 
-  constructor(private menu: MenuController) { }
+  constructor(
+    private menu: MenuController
+    ) { }
 
-  openMenu() {
-    console.log('ss');
-    this.menu.open('menu');
-  }
 
   tabChanged(ev: {tab: string}) {
     this.tabCounter++;

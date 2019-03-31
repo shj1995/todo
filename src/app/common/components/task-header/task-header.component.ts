@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { MenuController, ModalController } from '@ionic/angular';
+import { TaskAddComponent } from '../task-add/task-add.component';
 
 @Component({
   selector: 'app-task-header',
@@ -8,12 +9,40 @@ import { MenuController } from '@ionic/angular';
 })
 export class TaskHeaderComponent implements OnInit {
 
-  constructor(private menu: MenuController) { }
+  constructor(
+    public menu: MenuController,
+    public modalController: ModalController
+    ) { }
+
+  @Input() public leftOptionIcon: '';
+
+  @Output() public leftOptionEvent = new EventEmitter();
+
+  @Input() public rightOptionIcon: '';
+
+  @Output() public rightOptionEvent = new EventEmitter();
+
+  @Input() showAdd = true;
+
+  @Input() showNotice = true;
+
+  @Input() showSearch = false;
+
 
   ngOnInit() {}
+
+  emitOptionEvent(event: EventEmitter<any>) {
+    event.emit();
+  }
 
   openMenu() {
     console.log('ss');
     this.menu.open('menu');
+  }
+  async openAdd() {
+    const modal = await this.modalController.create({
+      component: TaskAddComponent
+    });
+    return await modal.present();
   }
 }

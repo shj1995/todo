@@ -4,12 +4,14 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { IonicModule } from '@ionic/angular';
 import { TaskAllDoneComponent } from './components/task-all-done/task-all-done.component';
 import { TaskHeaderComponent } from './components/task-header/task-header.component';
+import { TaskAddComponent } from './components/task-add/task-add.component';
 
 @NgModule({
   declarations: [
     TaskItemComponent,
     TaskAllDoneComponent,
-    TaskHeaderComponent
+    TaskHeaderComponent,
+    TaskAddComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,11 @@ import { TaskHeaderComponent } from './components/task-header/task-header.compon
   exports: [
     TaskItemComponent,
     TaskAllDoneComponent,
-    TaskHeaderComponent
+    TaskHeaderComponent,
+    TaskAddComponent
+  ],
+  entryComponents: [
+    TaskAddComponent
   ]
 })
 export class TodoCommonModule { }
