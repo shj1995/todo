@@ -1,0 +1,27 @@
+<ion-header>
+  <app-task-header>
+      <ion-toolbar color="tertiary">
+          <ion-tabs (ionTabsDidChange)="tabChanged($event)">
+              <ion-tab-bar color="tertiary" slot="bottom">
+                  <ion-tab-button tab="task-daily">
+                    <ion-label>Daily</ion-label>
+                  </ion-tab-button>
+              
+                  <ion-tab-button tab="task-weekly">
+                    <ion-label>Weekly</ion-label>
+                  </ion-tab-button>
+              
+                  <ion-tab-button tab="task-monthly">
+                    <ion-label>Monthly</ion-label>
+                  </ion-tab-button>
+                </ion-tab-bar>
+          </ion-tabs>
+        </ion-toolbar>
+  </app-task-header>
+</ion-header>
+
+<ion-content force-overscroll="false" color="light" >
+  <app-task-daily *ngIf="tabEvent == 'task-daily'"></app-task-daily>
+  <app-task-weekly *ngIf="tabEvent == 'task-weekly'"></app-task-weekly>
+  <app-task-monthly *ngIf="tabEvent == 'task-monthly'"></app-task-monthly>
+</ion-content>

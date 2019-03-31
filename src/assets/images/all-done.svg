@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="472.533" height="597" viewBox="0 0 472.533 597">
+  <defs>
+    <filter id="椭圆_11" x="22.533" y="147" width="450" height="450" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_36" x="405.222" y="57.644" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_37" x="387.578" y="40" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_38" x="369.933" y="57.644" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_39" x="387.578" y="75.289" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_40" x="334.645" y="57.644" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_41" x="397" y="164.089" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_42" x="432.289" y="164.089" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_43" x="414.645" y="146.445" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-9"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_44" x="414.645" y="181.733" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-10"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_45" x="70.578" y="167.622" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-11"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_46" x="52.933" y="149.978" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-12"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_47" x="35.289" y="167.622" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-13"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_48" x="52.933" y="185.267" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-14"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_49" x="0" y="167.622" width="35.644" height="35.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-15"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_50" x="83.533" y="52.933" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-16"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-16"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_51" x="118.822" y="52.933" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-17"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-17"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_52" x="101.178" y="35.289" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-18"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-18"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_53" x="101.178" y="70.578" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-19"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-19"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_54" x="207.044" y="0" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-20"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-20"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="组_121" data-name="组 121" transform="translate(-292.467 -810)">
+    <g id="组_120" data-name="组 120">
+      <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#椭圆_11)">
+        <circle id="椭圆_11-2" data-name="椭圆 11" cx="216" cy="216" r="216" transform="translate(31.53 153)" fill="#7646ff"/>
+      </g>
+      <g id="组_117" data-name="组 117" transform="translate(483.375 1051.313)">
+        <path id="路径_55" data-name="路径 55" d="M264,141.2v32.172h39.509V100h-6.773C292.785,118.061,279.239,133.865,264,141.2Z" transform="translate(-190.625 -93.791)" fill="#ffeb3d"/>
+        <path id="路径_56" data-name="路径 56" d="M199.509,170.783V138.611c-16.933-7.9-31.608-26.528-33.865-47.411h0c-1.693,0-3.951.564-5.644.564v79.019h0" transform="translate(-160 -91.2)" fill="#ffeb3d"/>
+      </g>
+      <path id="路径_57" data-name="路径 57" d="M152,204l28.221,112.884h67.731L276.173,204H247.952v16.933l-33.865,11.288-33.865-11.288V204h16.933" transform="translate(325.731 926.897)" fill="#6035d0"/>
+      <path id="路径_58" data-name="路径 58" d="M173.546,66.984h.564l6.773-1.693c.564,0,.564,0,1.129-.564a27.513,27.513,0,0,0,6.209-2.258c.564,0,1.129-.564,1.693-.564,1.693-.564,3.951-1.693,5.644-2.258.564-.564,1.693-.564,2.258-1.129a12.29,12.29,0,0,0,4.515-2.822A12.338,12.338,0,0,0,205.154,54c1.129-.564,2.822-1.693,3.951-2.258,1.129-1.129,2.822-1.693,3.951-2.822a9.909,9.909,0,0,0,2.822-2.258c2.258-1.693,3.951-3.951,6.209-5.644a33.965,33.965,0,0,0,33.865,33.865h16.933V69.242c0-32.172-22.577-56.442-56.442-56.442S161.129,39.892,160,69.242c2.258,0,3.951-.564,5.644-.564C168.466,67.549,170.724,67.549,173.546,66.984Z" transform="translate(323.375 983.2)" fill="#ffeb3d"/>
+      <g id="组_118" data-name="组 118" transform="translate(410 1023.657)">
+        <path id="路径_59" data-name="路径 59" d="M242.8,190.336V158.164c-3.951,1.693-8.466,3.387-12.417,3.387h-4.515c-5.644,0-11.288-1.693-16.933-3.951v32.736H192v16.933l33.865,11.288,33.865-11.288V190.336H242.8Z" transform="translate(-96.048 -83.096)" fill="#f6f6f8"/>
+        <path id="路径_60" data-name="路径 60" d="M349.5,441.441a16.906,16.906,0,0,0,14.675-16.368,16.511,16.511,0,0,0-19.19-16.368L240,422.25l44.589,27.657Z" transform="translate(-110.183 -156.972)" fill="#f6f6f8"/>
+        <path id="路径_61" data-name="路径 61" d="M64,424.272a16.481,16.481,0,0,0,14.675,16.368l109.5,15.239,44.589-6.209-44.589-27.657L83.19,407.9A16.511,16.511,0,0,0,64,424.272Z" transform="translate(-58.356 -156.737)" fill="#f6f6f8"/>
+        <path id="路径_62" data-name="路径 62" d="M376.2,328.173H359.264l-22.577-45.154V220.933A16.63,16.63,0,0,0,319.755,204L300,281.89l42.332,68.859H376.2a11.288,11.288,0,1,0,0-22.577Z" transform="translate(-127.851 -96.76)" fill="#f6f6f8"/>
+        <path id="路径_63" data-name="路径 63" d="M219.034,131.019h4.515a35.35,35.35,0,0,0,12.417-3.951h0c15.239-7.337,28.785-23.141,32.736-41.2h-10.16A33.965,33.965,0,0,1,224.678,52a56.209,56.209,0,0,1-6.209,5.644c-1.129.564-1.693,1.693-2.822,2.258a10.124,10.124,0,0,1-3.951,2.822,14.147,14.147,0,0,1-3.951,2.258c-1.129.564-1.693,1.129-2.822,1.693-1.693,1.129-3.387,1.693-4.515,2.822-.564.564-1.693.564-2.258,1.129a16.9,16.9,0,0,1-5.644,2.258c-.564,0-1.129.564-1.693.564-2.258.564-3.951,1.693-6.209,2.258-.564,0-.564,0-1.129.564L176.7,77.963h-.564a33.033,33.033,0,0,1-7.337,1.129h0c2.258,20.884,16.368,39.509,33.865,47.411h0A34.014,34.014,0,0,0,219.034,131.019Z" transform="translate(-89.217 -52)" fill="#f6f6f8"/>
+        <path id="路径_64" data-name="路径 64" d="M123.731,204A16.63,16.63,0,0,0,106.8,220.933v62.086L84.221,328.173H67.288a11.288,11.288,0,1,0,0,22.577h33.865l42.332-68.859Z" transform="translate(-56 -96.76)" fill="#f6f6f8"/>
+      </g>
+      <path id="路径_65" data-name="路径 65" d="M211.024,409.154l69.424-9.6L244.889,364H177.159L141.6,399.559Z" transform="translate(328.793 879.781)" fill="#6035d0"/>
+      <g id="组_119" data-name="组 119" transform="translate(416.773 1098.161)">
+        <path id="路径_66" data-name="路径 66" d="M237.448,167.76h0a32.049,32.049,0,0,0,12.417-3.951v-5.644c-3.951,1.693-8.466,3.387-12.417,3.387h-4.515c-5.644,0-11.288-1.693-16.933-3.951v5.644c5.644,2.258,11.288,3.951,16.933,3.951A12.428,12.428,0,0,0,237.448,167.76Z" transform="translate(-109.889 -157.6)" fill="#5030a6" opacity="0.98"/>
+        <path id="路径_67" data-name="路径 67" d="M141.6,372l69.424,9.6v-5.644l-31.608-3.387a11.489,11.489,0,0,1-7.9-18.061L184.5,335.873a11.505,11.505,0,0,0,1.129-11.288L160.79,270.4l16.368,66.037Z" transform="translate(-87.98 -190.817)" fill="#222426" opacity="0.24"/>
+        <path id="路径_68" data-name="路径 68" d="M309.424,372.231l-35.559-35.559L290.234,271.2,265.4,325.384a11.505,11.505,0,0,0,1.129,11.288L279.509,355.3c5.08,6.773.564,16.933-7.9,18.061L240,376.182v5.644Z" transform="translate(-116.956 -191.052)" fill="#222426" opacity="0.24"/>
+        <path id="路径_69" data-name="路径 69" d="M89.87,421.81c16.933,0,31.608-3.387,38.381-8.466l-44.589-6.209A16.252,16.252,0,0,0,65.6,418.987,102.4,102.4,0,0,0,89.87,421.81Z" transform="translate(-65.6 -231.035)" fill="#222426" opacity="0.24"/>
+        <path id="路径_70" data-name="路径 70" d="M319.2,414.7c7.337,4.515,21.448,7.337,37.252,7.337a109.769,109.769,0,0,0,29.914-3.951c-2.822-6.773-10.16-11.288-17.5-10.16Z" transform="translate(-140.278 -231.264)" fill="#222426" opacity="0.24"/>
+        <path id="路径_71" data-name="路径 71" d="M289.669,454.857l-43.46-27.092-2.822-.564-3.387.564,44.589,27.657Z" transform="translate(-116.956 -236.99)" fill="#222426" opacity="0.24"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_36)">
+      <rect id="矩形_36-2" data-name="矩形 36" width="17.644" height="17.644" transform="translate(414.22 63.64)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_37)">
+      <rect id="矩形_37-2" data-name="矩形 37" width="17.644" height="17.644" transform="translate(396.58 46)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_38)">
+      <rect id="矩形_38-2" data-name="矩形 38" width="17.644" height="17.644" transform="translate(378.93 63.64)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_39)">
+      <rect id="矩形_39-2" data-name="矩形 39" width="17.644" height="17.644" transform="translate(396.58 81.29)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_40)">
+      <rect id="矩形_40-2" data-name="矩形 40" width="17.644" height="17.644" transform="translate(343.64 63.64)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_41)">
+      <rect id="矩形_41-2" data-name="矩形 41" width="12" height="12" transform="translate(406 170.09)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_42)">
+      <rect id="矩形_42-2" data-name="矩形 42" width="12" height="12" transform="translate(441.29 170.09)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_43)">
+      <rect id="矩形_43-2" data-name="矩形 43" width="12" height="12" transform="translate(423.64 152.44)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_44)">
+      <rect id="矩形_44-2" data-name="矩形 44" width="12" height="12" transform="translate(423.64 187.73)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_45)">
+      <rect id="矩形_45-2" data-name="矩形 45" width="17.644" height="17.644" transform="translate(79.58 173.62)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_46)">
+      <rect id="矩形_46-2" data-name="矩形 46" width="17.644" height="17.644" transform="translate(61.93 155.98)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_47)">
+      <rect id="矩形_47-2" data-name="矩形 47" width="17.644" height="17.644" transform="translate(44.29 173.62)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_48)">
+      <rect id="矩形_48-2" data-name="矩形 48" width="17.644" height="17.644" transform="translate(61.93 191.27)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_49)">
+      <rect id="矩形_49-2" data-name="矩形 49" width="17.644" height="17.644" transform="translate(9 173.62)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_50)">
+      <rect id="矩形_50-2" data-name="矩形 50" width="12" height="12" transform="translate(92.53 58.93)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_51)">
+      <rect id="矩形_51-2" data-name="矩形 51" width="12" height="12" transform="translate(127.82 58.93)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_52)">
+      <rect id="矩形_52-2" data-name="矩形 52" width="12" height="12" transform="translate(110.18 41.29)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_53)">
+      <rect id="矩形_53-2" data-name="矩形 53" width="12" height="12" transform="translate(110.18 76.58)" fill="#2060a1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 292.47, 810)" filter="url(#矩形_54)">
+      <rect id="矩形_54-2" data-name="矩形 54" width="12" height="12" transform="translate(216.04 6)" fill="#2060a1"/>
+    </g>
+  </g>
+</svg>

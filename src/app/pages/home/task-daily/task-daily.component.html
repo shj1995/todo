@@ -1,0 +1,31 @@
+<app-task-all-done *ngIf="!tasks.length" ></app-task-all-done>
+<div *ngIf="tasks.length">
+
+    <ion-card  style="--background:#fff">
+        <ion-card-header>
+          <ion-card-title>早上好，小明</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="date">
+              <ion-text color="tertiary">
+                <h1>TODAY</h1>
+              </ion-text>
+              <ion-text color="">
+                  <h1><b>2019年1月1日</b></h1>
+              </ion-text>
+          </div>
+          <div class="status">
+            <ion-text color="success">
+              <p>任务</p>
+            </ion-text>
+            <ion-text color="success">
+              <p>1/<ion-text color="danger">10</ion-text></p>
+            </ion-text>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-list>
+          <app-task-item 
+          *ngFor="let task of tasks" [task]="task" (done)="done($event)"></app-task-item>
+      </ion-list>
+</div>
