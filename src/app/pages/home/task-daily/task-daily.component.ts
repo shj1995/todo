@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from 'src/app/models/task';
+import { Task } from "src/app/models/task";
 import { trigger, useAnimation, transition, state, style, animate } from '@angular/animations';
 import { bounceOutRight } from 'ng-animate';
+import { TaskManagerService } from 'src/app/services/task-manager.service';
 
 @Component({
   selector: 'app-task-daily',
@@ -13,18 +14,17 @@ import { bounceOutRight } from 'ng-animate';
 })
 export class TaskDailyComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public taskManager: TaskManagerService
+   ) { }
 
-  tasks = new Array<Task>();
+  public tasks = new Array<Task>();
 
   ngOnInit() {
-    let i = 0;
-    for (i = 0; i < 1; i++) {
-      this.tasks.push(new Task('事项' + i));
-    }
+    // console.log(this.taskManager);
+    // this.tasks = this.taskManager.listAll();
   }
   done(task) {
-    console.log(task);
     this.tasks.splice(this.tasks.findIndex(item => item.title === task.title) , 1);
   }
 }

@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
-import { Task } from 'src/app/models/task';
 import { IonItemSliding } from '@ionic/angular';
 import { trigger, state, transition, style, animate } from '@angular/animations';
+import { Task } from 'src/app/models/task';
+
 
 @Component({
   selector: 'app-task-item',

@@ -22,11 +22,11 @@ export class TaskHeaderComponent implements OnInit {
 
   @Output() public rightOptionEvent = new EventEmitter();
 
-  @Input() showAdd = true;
+  @Input() public showAdd = true;
 
-  @Input() showNotice = true;
+  @Input() public showNotice = true;
 
-  @Input() showSearch = false;
+  @Input() public showSearch = false;
 
 
   ngOnInit() {}

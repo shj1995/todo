@@ -5,6 +5,9 @@ import { IonicModule } from '@ionic/angular';
 import { TaskAllDoneComponent } from './components/task-all-done/task-all-done.component';
 import { TaskHeaderComponent } from './components/task-header/task-header.component';
 import { TaskAddComponent } from './components/task-add/task-add.component';
+import { TaskManagerService } from '../services/task-manager.service';
+import { FileManagerService } from '../services/file-manager.service';
+import { EntityManagerService } from '../services/entity-manager.service';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { TaskAddComponent } from './components/task-add/task-add.component';
   ],
   entryComponents: [
     TaskAddComponent
+  ],
+  providers: [
   ]
 })
 export class TodoCommonModule { }

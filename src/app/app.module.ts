@@ -11,23 +11,26 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
 import { TodoCommonModule } from './common/todo-common.module';
+import { FileManagerService } from './services/file-manager.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
   ],
-  entryComponents: [],
+  entryComponents: [
+  ],
   imports: [
     CommonModule,
+    TodoCommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    TodoCommonModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    FileManagerService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

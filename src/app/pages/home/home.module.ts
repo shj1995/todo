@@ -7,8 +7,9 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { TaskDailyComponent } from './task-daily/task-daily.component';
 import { TaskWeeklyComponent } from './task-weekly/task-weekly.component';
-import { TodoCommonModule } from 'src/app/common/todo-common.module';
 import { TaskMonthlyComponent } from './task-monthly/task-monthly.component';
+import { TodoCommonModule } from 'src/app/common/todo-common.module';
+import { FileManagerService } from 'src/app/services/file-manager.service';
 
 @NgModule({
   imports: [
@@ -48,6 +49,9 @@ import { TaskMonthlyComponent } from './task-monthly/task-monthly.component';
     TaskDailyComponent,
     TaskWeeklyComponent,
     TaskMonthlyComponent
+  ],
+  providers:[
+    FileManagerService
   ]
 })
 export class HomePageModule {}
