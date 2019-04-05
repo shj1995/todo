@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { TaskManagerService } from 'src/app/services/task-manager.service';
 import { Task } from 'src/app/models/task';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-task-add',
@@ -10,19 +11,24 @@ import { Task } from 'src/app/models/task';
 })
 export class TaskAddComponent implements OnInit {
 
-  private task: Task;
+  public task = new Task('');
 
+  public date = new Date().toISOString();
   constructor(
     public modalController: ModalController,
-    // public taskManager: TaskManagerService
+    public taskManager: TaskManagerService
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(new Date());
+  }
 
   close() {
     this.modalController.dismiss();
   }
-  add(){
-    // this.taskManager.create(this.task);
+  add() {
+    this.task.date = new Date(this.date);
+    this.taskManager.create(this.task);
+    this.close();
   }
 }

@@ -2,28 +2,50 @@ import { Injectable } from '@angular/core';
 import { FileManagerService } from './file-manager.service';
 import { Subject } from 'rxjs';
 import { Entity } from '../models/entity';
+import { Type } from '@angular/compiler';
+import { UUIDUtils } from '../common/tools/uuid-Utils';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class EntityManagerService {
 
-  constructor(public fileManager: FileManagerService) { }
+export class EntityManagerService<T extends Entity> {
 
-  public get<T extends Entity>(entityId: string,typeName: string): Subject<T> {
-    let entity = new Subject<T>();
-    const fileName = typeName + ".json"
-    this.fileManager.readFile(fileName).catch(result => {      
-      entity.next(result)
+  // private entityListSubject = new Subject<Array<T>>();
+
+  private entityList = new Array<T>();
+
+  private typeName: string;
+
+  private fileName: string;
+
+  constructor(private fileManager: FileManagerService, typeName: string) {
+    this.fileName = this.typeName + '.json';
+  }
+
+  public get(entityId: string): Subject<T> {
+    const entity = new Subject<T>();
+    this.fileManager.readFile(this.fileName).catch(result => {
+      entity.next(result);
     });
     return entity;
   }
-  public list<T extends Entity>(typeName: string): Subject<Array<T>> {
-    let entityList = new Subject<Array<T>>();
-    const fileName = typeName + ".json"
-    this.fileManager.readFile(fileName).catch(result => {      
-      entityList.next(JSON.parse(result));
+
+  private loadList() {
+    this.fileManager.readFile(this.fileName).catch(result => {
+      this.entityList = JSON.parse(result);
     });
-    return entityList;
   }
+
+  public list(): Array<T> {
+    this.loadList();
+    return this.entityList;
+  }
+
+  public create(entity: T) {
+    if (!entity.id) {
+      entity.id = UUIDUtils.generate();
+    }
+    console.log(entity.id);
+    this.entityList.push(entity);
+    this.fileManager.writeFile(this.fileName, JSON.stringify(this.entityList));
+  }
+
 }

@@ -20,8 +20,8 @@ export class FileManagerService {
   }
 
   constructor(
-    private file: File,
-    private device: Device
+    public file: File,
+    public device: Device
     ) { }
 
   public writeFile(fileName: string, content: string): void {

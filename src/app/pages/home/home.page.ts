@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { TaskManagerService } from 'src/app/services/task-manager.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,6 @@ export class HomePage {
   tabEvent = 'task-daily';
 
   constructor(
-    private menu: MenuController
     ) { }
 
 

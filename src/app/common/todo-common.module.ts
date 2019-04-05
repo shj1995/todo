@@ -8,6 +8,7 @@ import { TaskAddComponent } from './components/task-add/task-add.component';
 import { TaskManagerService } from '../services/task-manager.service';
 import { FileManagerService } from '../services/file-manager.service';
 import { EntityManagerService } from '../services/entity-manager.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,8 @@ import { EntityManagerService } from '../services/entity-manager.service';
   imports: [
     CommonModule,
     IonicModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     TaskItemComponent,

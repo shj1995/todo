@@ -30,6 +30,9 @@ export class TaskItemComponent implements OnInit {
   emitDoneEvent() {
     this.done.emit(this.task);
   }
+  follow() {
+    this.task.follow = !this.task.follow;
+  }
   stoProp(e) {
     e.stopPropagation();
     console.log(e);

@@ -10,6 +10,8 @@ import { TaskWeeklyComponent } from './task-weekly/task-weekly.component';
 import { TaskMonthlyComponent } from './task-monthly/task-monthly.component';
 import { TodoCommonModule } from 'src/app/common/todo-common.module';
 import { FileManagerService } from 'src/app/services/file-manager.service';
+import { EntityManagerService } from 'src/app/services/entity-manager.service';
+import { TaskManagerService } from 'src/app/services/task-manager.service';
 
 @NgModule({
   imports: [
@@ -50,8 +52,7 @@ import { FileManagerService } from 'src/app/services/file-manager.service';
     TaskWeeklyComponent,
     TaskMonthlyComponent
   ],
-  providers:[
-    FileManagerService
+  providers: [
   ]
 })
 export class HomePageModule {}

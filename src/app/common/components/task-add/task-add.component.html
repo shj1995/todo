@@ -7,21 +7,21 @@
   <ion-list lines="full">
   <ion-item>
     <ion-label color="medium" position="floating">Task Name</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="task.title"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label color="medium" position="floating">Description</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="task.description"></ion-input>
   </ion-item>
 
   <ion-item>
       <ion-label color="medium" position="floating">Catelog</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="task.category"></ion-input>
     </ion-item>
 
   <ion-item>
       <ion-label color="medium" position="floating">Pick Date & Time</ion-label>
-      <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+      <ion-datetime [(ngModel)]="date" display-format="YYYY-MM-DD HH:mm"></ion-datetime>
     </ion-item>
   
     <ion-item-group>
@@ -37,5 +37,5 @@
   </ion-list>
 </ion-content>
 <ion-footer>
-  <ion-button style="margin:0" color="tertiary" expand="full">ADD</ion-button>
+  <ion-button style="margin:0" (click)="add()" color="tertiary" expand="full">ADD</ion-button>
 </ion-footer>

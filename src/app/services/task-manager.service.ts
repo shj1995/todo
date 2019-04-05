@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { EntityManagerService } from './entity-manager.service';
 import { Task } from '../models/task';
 import { Platform } from '@ionic/angular';
+import { FileManagerService } from './file-manager.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,21 +10,16 @@ import { Platform } from '@ionic/angular';
 export class TaskManagerService {
 
   private taskList: Array<Task> = new Array<Task>();
-
+  private entityManager: EntityManagerService<Task>;
   constructor(
-    public entityManager: EntityManagerService,
+    private fileManager: FileManagerService,
     private platform: Platform
   ) {
-    this.platform.ready().then(() => {
-
-      this.entityManager.list<Task>(Task.typeName).subscribe(result => {
-        this.taskList = result;
-      });
-    });
+    this.entityManager = new EntityManagerService(fileManager, Task.typeName);
   }
 
   private done(id: string) {
-    let task = this.getById(id);
+    const task = this.getById(id);
     task.done = true;
   }
 
@@ -38,7 +34,7 @@ export class TaskManagerService {
   }
 
   public listAll() {
-    return this.taskList;
+    return this.entityManager.list();
   }
 
   public listByDaily() {
@@ -50,7 +46,7 @@ export class TaskManagerService {
   }
 
   public create(task: Task) {
-    this.taskList.push(task);
+    this.entityManager.create(task);
   }
   public update() {
 

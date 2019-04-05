@@ -4,10 +4,10 @@
 <ion-item style="--padding-start:0">
   <ion-label class="date">
     <ion-text>
-      <p>4:00</p>
+      <p>{{task.date | date :'HH:mm'}}</p>
     </ion-text>
     <ion-text color="dark">
-      <p><b>PM</b></p>
+      <p><b>{{task.date | date :'a'}}</b></p>
     </ion-text>
   </ion-label>
   <ion-label class="task-info">
@@ -15,11 +15,11 @@
       <p>{{task.title}}</p>
     </ion-text>
     <ion-text color="medium">
-      <p>生活</p>
+      <p>{{task.category}}</p>
     </ion-text>
   </ion-label>
-  <ion-icon color="warning" name="star" size="small" slot=""></ion-icon>
-  <ion-icon name="star-outline" size="small" slot=""></ion-icon>
+  <ion-icon *ngIf="task.follow" color="warning" (click)="follow()" name="star" size="small" slot=""></ion-icon>
+  <ion-icon *ngIf="!task.follow" (click)="follow()" name="star-outline" size="small" slot=""></ion-icon>
   <ion-icon color="success" size="small" name="round"></ion-icon>
 </ion-item>
 <ion-item-options class="option" side="start">
