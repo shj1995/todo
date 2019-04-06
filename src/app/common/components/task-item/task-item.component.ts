@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
-import { IonItemSliding } from '@ionic/angular';
+import { IonItemSliding, ModalController } from '@ionic/angular';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { Task } from 'src/app/models/task';
+import { TaskViewComponent } from '../task-view/task-view.component';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { Task } from 'src/app/models/task';
 export class TaskItemComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private modalController: ModalController) { }
 
   @ViewChild('slid') slid: IonItemSliding;
 
@@ -30,12 +31,20 @@ export class TaskItemComponent implements OnInit {
   emitDoneEvent() {
     this.done.emit(this.task);
   }
-  follow() {
+
+  follow(e: Event) {
     this.task.follow = !this.task.follow;
-  }
-  stoProp(e) {
     e.stopPropagation();
-    console.log(e);
+  }
+
+  async openViewModal() {
+    const modal = await this.modalController.create({
+      component: TaskViewComponent,
+      componentProps: {
+        task: this.task
+      }
+    });
+    return await modal.present();
   }
 
 }

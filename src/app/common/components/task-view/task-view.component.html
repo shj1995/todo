@@ -1,0 +1,46 @@
+<ion-header>
+  <app-task-header [showNotice]="false" rightOptionIcon="close" (rightOptionEvent)="close()">
+  </app-task-header>
+</ion-header>
+<ion-content force-overscroll="false" color="light">
+  
+  <ion-card style="--background:#fff">
+    <ion-card-content>
+        <ion-list class="info" lines="none" style="--background:#fff">
+            <ion-item class="title">
+                <ion-label>
+                  {{task.title}}</ion-label>
+            </ion-item>
+            <ion-item class="date">
+              <ion-label>
+                  {{task.date | date: 'yyyy-MM-dd HH:mm'}}</ion-label>
+            </ion-item>
+            <ion-item class="description">
+              <ion-text>
+                  {{task.description}}{{task.description}}{{task.description}}{{task.description}}{{task.description}}</ion-text>
+            </ion-item>
+            <ion-item>
+              <ion-label class="category">
+                  类型：{{task.category}}
+                </ion-label>
+            </ion-item>
+          </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-buttons slot="secondary">
+    <ion-button (click)="deleteAlert()">
+      <ion-icon color="dark" size="large" name="trash"></ion-icon>
+    </ion-button>
+    <ion-button (click)="onClick()">
+      <ion-icon color="dark" size="large" name="create" mode="md"></ion-icon>
+    </ion-button>
+    <ion-button (click)="onClick()">
+      <ion-icon color="dark" size="large" name="time"></ion-icon>
+    </ion-button>
+    <ion-button (click)="onClick()">
+      <ion-icon color="dark" size="large" name="checkbox-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-footer>

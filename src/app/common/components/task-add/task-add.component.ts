@@ -20,7 +20,8 @@ export class TaskAddComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(new Date());
+    this.task.title = '这是一个正经标题';
+    this.task.description = '这是一个正经内容';
   }
 
   close() {

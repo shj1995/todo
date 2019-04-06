@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TaskManagerService } from 'src/app/services/task-manager.service';
+import { Task } from 'src/app/models/task';
 
 @Component({
   selector: 'app-task-monthly',
@@ -7,8 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskMonthlyComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public taskManager: TaskManagerService
+   ) { }
 
-  ngOnInit() {}
+  public tasks = new Array<Task>();
 
+  ngOnInit() {
+    this.tasks = this.taskManager.listAll();
+    // this.taskManager.listAllSubject().subscribe( taskList => {
+    //     this.tasks = taskList;
+    //   }
+    // );
+  }
+  done(task) {
+    this.tasks.splice(this.tasks.findIndex(item => item.id === task.id) , 1);
+  }
 }

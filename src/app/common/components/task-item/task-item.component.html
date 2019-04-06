@@ -1,6 +1,5 @@
 
-<ion-item-sliding #slid (mousedown)="stoProp($event)" (touchstart)="stoProp($event)"  
->
+<ion-item-sliding #slid (click)="openViewModal()">
 <ion-item style="--padding-start:0">
   <ion-label class="date">
     <ion-text>
@@ -18,8 +17,8 @@
       <p>{{task.category}}</p>
     </ion-text>
   </ion-label>
-  <ion-icon *ngIf="task.follow" color="warning" (click)="follow()" name="star" size="small" slot=""></ion-icon>
-  <ion-icon *ngIf="!task.follow" (click)="follow()" name="star-outline" size="small" slot=""></ion-icon>
+  <ion-icon *ngIf="task.follow" color="warning" (click)="follow($event)" name="star" size="small" slot=""></ion-icon>
+  <ion-icon *ngIf="!task.follow" (click)="follow($event)" name="star-outline" size="small" slot=""></ion-icon>
   <ion-icon color="success" size="small" name="round"></ion-icon>
 </ion-item>
 <ion-item-options class="option" side="start">

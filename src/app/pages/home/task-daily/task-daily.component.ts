@@ -18,11 +18,14 @@ export class TaskDailyComponent implements OnInit {
     public taskManager: TaskManagerService
    ) { }
 
-  public tasks = new Array<Task>();
+  public tasks: Array<Task>;
 
   ngOnInit() {
-    // console.log(this.taskManager);
     this.tasks = this.taskManager.listAll();
+    // this.taskManager.listAllSubject().subscribe( taskList => {
+    //     this.tasks = taskList;
+    //   }
+    // );
   }
   done(task) {
     this.tasks.splice(this.tasks.findIndex(item => item.id === task.id) , 1);

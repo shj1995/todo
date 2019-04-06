@@ -1,3 +1,7 @@
-<p>
-  task-monthly works!
-</p>
+<app-task-all-done *ngIf="!tasks.length" ></app-task-all-done>
+<div *ngIf="tasks.length">
+      <ion-list>
+          <app-task-item 
+          *ngFor="let task of tasks" [task]="task" (done)="done($event)"></app-task-item>
+      </ion-list>
+</div>

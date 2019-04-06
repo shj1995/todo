@@ -8,7 +8,7 @@ import { UUIDUtils } from '../common/tools/uuid-Utils';
 
 export class EntityManagerService<T extends Entity> {
 
-  // private entityListSubject = new Subject<Array<T>>();
+  private entityListSubject = new Subject<Array<T>>();
 
   private entityList = new Array<T>();
 
@@ -31,8 +31,13 @@ export class EntityManagerService<T extends Entity> {
   private loadList() {
     this.fileManager.readFile(this.fileName).catch(result => {
       this.entityList = JSON.parse(result);
+      this.entityListSubject.next(this.entityList);
     });
   }
+  public getEntityListSubject(): Subject<Array<T>> {
+    return this.entityListSubject;
+  }
+
 
   public list(): Array<T> {
     this.loadList();
@@ -45,6 +50,7 @@ export class EntityManagerService<T extends Entity> {
     }
     console.log(entity.id);
     this.entityList.push(entity);
+    this.entityListSubject.next(this.entityList);
     this.fileManager.writeFile(this.fileName, JSON.stringify(this.entityList));
   }
 

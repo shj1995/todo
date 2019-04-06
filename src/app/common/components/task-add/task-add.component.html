@@ -6,21 +6,21 @@
 
   <ion-list lines="full">
   <ion-item>
-    <ion-label color="medium" position="floating">Task Name</ion-label>
+    <ion-label color="medium" position="floating">任务名称</ion-label>
     <ion-input [(ngModel)]="task.title"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label color="medium" position="floating">Description</ion-label>
+    <ion-label color="medium" position="floating">任务描述</ion-label>
     <ion-input [(ngModel)]="task.description"></ion-input>
   </ion-item>
 
   <ion-item>
-      <ion-label color="medium" position="floating">Catelog</ion-label>
+      <ion-label color="medium" position="floating">类型</ion-label>
       <ion-input [(ngModel)]="task.category"></ion-input>
     </ion-item>
 
   <ion-item>
-      <ion-label color="medium" position="floating">Pick Date & Time</ion-label>
+      <ion-label color="medium" position="floating">选择日期和时间</ion-label>
       <ion-datetime [(ngModel)]="date" display-format="YYYY-MM-DD HH:mm"></ion-datetime>
     </ion-item>
   
