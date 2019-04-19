@@ -3,7 +3,7 @@ import { FileManagerService } from './file-manager.service';
 import { Subject } from 'rxjs';
 import { Entity } from '../models/entity';
 import { Type } from '@angular/compiler';
-import { UUIDUtils } from '../common/tools/uuid-Utils';
+import { UUIDUtils } from '../common/tools/uuid-utils';
 
 
 export class EntityManagerService<T extends Entity> {
@@ -50,7 +50,7 @@ export class EntityManagerService<T extends Entity> {
     }
     console.log(entity.id);
     this.entityList.push(entity);
-    this.entityListSubject.next(this.entityList);
+    // this.entityListSubject.next(this.entityList);
     this.fileManager.writeFile(this.fileName, JSON.stringify(this.entityList));
   }
 

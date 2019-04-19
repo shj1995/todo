@@ -28,6 +28,7 @@ export class TaskManagerService {
     this.platform.ready().then(() => {
 
       this.entityManager = new EntityManagerService(this.fileManager, Task.typeName);
+      this.taskList = this.entityManager.list();
       this.entityManager.getEntityListSubject().subscribe(entityList => {
         this.taskList = entityList;
         // this.taskListSubject.next(this.taskList);
