@@ -3,6 +3,7 @@ import { trigger, useAnimation, transition, state, style, animate } from '@angul
 import { bounceOutRight } from 'ng-animate';
 import { TaskManagerService } from 'src/app/services/task-manager.service';
 import { Task } from 'src/app/models/task';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-task-daily',
@@ -15,13 +16,17 @@ import { Task } from 'src/app/models/task';
 export class TaskDailyComponent implements OnInit {
 
   constructor(
-    public taskManager: TaskManagerService
-   ) { }
+    public taskManager: TaskManagerService,
+    private platform: Platform
+  ) {
+    this.platform.ready().then(() => {
+      this.tasks = this.taskManager.listAll();
+    });
+   }
 
-  public tasks: Array<Task>;
+  public tasks = new Array<Task>();
 
   ngOnInit() {
-    this.tasks = this.taskManager.listAll();
     // this.taskManager.listAllSubject().subscribe( taskList => {
     //     this.tasks = taskList;
     //   }

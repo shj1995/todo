@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { Entity } from '../models/entity';
 import { Type } from '@angular/compiler';
 import { UUIDUtils } from '../common/tools/uuid-utils';
+import { Task } from '../models/task';
 
 
 export class EntityManagerService<T extends Entity> {
@@ -12,12 +13,10 @@ export class EntityManagerService<T extends Entity> {
 
   private entityList = new Array<T>();
 
-  private typeName: string;
-
   private fileName: string;
 
   constructor(private fileManager: FileManagerService, typeName: string) {
-    this.fileName = this.typeName + '.json';
+    this.fileName = typeName + '.json';
   }
 
   public get(entityId: string): Subject<T> {
@@ -29,9 +28,15 @@ export class EntityManagerService<T extends Entity> {
   }
 
   private loadList() {
-    this.fileManager.readFile(this.fileName).catch(result => {
-      this.entityList = JSON.parse(result);
+    // alert('loadFileing...');
+    this.fileManager.readFile(this.fileName).then(result => {
+      // alert(result);
+      (JSON.parse(result) as Array<T>).forEach(item => {
+        this.entityList.push(item);
+      });
       this.entityListSubject.next(this.entityList);
+    }).catch(result => {
+      // alert(result);
     });
   }
   public getEntityListSubject(): Subject<Array<T>> {

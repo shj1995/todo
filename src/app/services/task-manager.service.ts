@@ -29,16 +29,6 @@ export class TaskManagerService {
 
       this.entityManager = new EntityManagerService(this.fileManager, Task.typeName);
       this.taskList = this.entityManager.list();
-      this.entityManager.getEntityListSubject().subscribe(entityList => {
-        this.taskList = entityList;
-        // this.taskListSubject.next(this.taskList);
-        // const taskListDaily = new Array<Task>();
-        // console.log(this.taskList);
-        // entityList.forEach(item => {
-        //   console.log(Dayjs);
-        // });
-        // this.taskListDaily.next(taskListDaily);
-      });
     });
   }
 

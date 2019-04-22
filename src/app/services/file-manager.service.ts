@@ -30,20 +30,24 @@ export class FileManagerService {
     if (path === '') {
       return;
     }
+    // alert(`fileName:${fileName};content:${content}`);
 
     this.file.writeExistingFile(this.getBaseFolderPath(), fileName, content)
     .then((result) => {
       console.log('写入成功' + result);
+      // alert('写入成功');
     })
     .catch((result: any) => {
       this.file.writeFile(this.getBaseFolderPath(), fileName, content)
       // tslint:disable-next-line:no-shadowed-variable
       .then((result) => {
         console.log('创建&写入成功' + result);
+        // alert('创建&写入成功' + result);
       })
       // tslint:disable-next-line:no-shadowed-variable
       .catch((result) => {
         console.log('创建&写入失败' + result);
+        // alert('创建&写入失败' + result);
       });
     });
   }
